@@ -5,9 +5,313 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alianza Francesa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <header>
+        <div class="d-flex flex-column">
+
+            <!--INFOBOX-->
+            <div class="d-flex justify-content-evenly bg-color text-white fw-bold">
+                <div class="p-2 bd-highlight">FAQ</div>
+                <div class="p-2 bd-highlight">Gestión de solicitudes</div>
+                <div class="p-2 bd-highlight">Blog y noticias</div>
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 bd-highlight"><i
+                            class="fa-sharp-duotone fa-brands fa-instagram text-danger bg-white p-1 rounded grow"></i>
+                    </div>
+                    <div class="p-2 bd-highlight"><i
+                            class="fa-brands fa-linkedin text-danger bg-white p-1 rounded grow"></i>
+                    </div>
+                    <div class="p-2 bd-highlight"><i
+                            class="fa-brands fa-tiktok text-danger bg-white p-1 rounded grow"></i></div>
+                    <div class="p-2 bd-highlight"><i
+                            class="fa-brands fa-facebook text-danger bg-white p-1 rounded grow"></i>
+                    </div>
+                    <div class="p-2 bd-highlight"><i
+                            class="fa-brands fa-x-twitter text-danger bg-white p-1 rounded grow"></i>
+                    </div>
+                    <div class="p-2 bd-highlight"><i
+                            class="fa-brands fa-spotify text-danger bg-white p-1 rounded grow"></i>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 bd-highlight"><i class="fa-solid fa-phone"></i></div>
+                    <div class="p-2 bd-highlight">(601)3905000</div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 bd-highlight"><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="p-2 bd-highlight"><i class="fa-regular fa-circle-user"></i></div>
+                </div>
+            </div>
+
+            <!--NAVBAR-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container mx-auto">
+
+                    <!--LOGO-->
+                    <a class="navbar-brand" href="https://bogota.alianzafrancesa.edu.co/#">
+                        <img src="./img/logo af.jpg" alt="" width="200" height="100">
+                    </a>
+
+                    <!--OPCIONES DEL MENU-->
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <!-- MENU CURSOS-->
+                            <!-- Dropdown principal-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" aria-expanded="false">
+                                    Cursos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <!-- Elemento con submenu -->
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">
+                                            Francés
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Catálogo de cursos</a></li>
+                                            <li><a class="dropdown-item" href="#">Adultos - 15 años en adelante</a></li>
+                                            <li><a class="dropdown-item" href="#">Adolescentes - Entre 11 y 14 años</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Niños - Entre 7 y 10 años</a></li>
+                                            <li><a class="dropdown-item" href="#">Clases particulares</a></li>
+                                            <li><a class="dropdown-item" href="#">Universidades</a></li>
+                                            <li><a class="dropdown-item" href="#">Cursos empresariales</a></li>
+                                            <li><a class="dropdown-item" href="#">Frantastique por Gymglish</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Francés en el exterior</a></li>
+                                    <li><a class="dropdown-item" href="#">Vacaciones en la Alianza</a></li>
+                                    <li><a class="dropdown-item" href="#">Educación continua / Talleres</a></li>
+                                    <!-- Elemento con submenu -->
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">
+                                            Español
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Clases particulares</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Jornada de ventana abiertas</a></li>
+                                    <li><a class="dropdown-item" href="#">Cursos para profesores</a></li>
+                                    <li><a class="dropdown-item" href="#">Ventana abiertas</a></li>
+                                </ul>
+                            </li>
+
+                            <!--MENU CERTIFICACIONES OFICIALES-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" aria-expanded="false">
+                                    Certificaciones oficiales
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Certificaciones oficiales</a></li>
+                                    <li><a class="dropdown-item" href="#">Ev&#64;lang 100% en línea</a></li>
+                                    <li><a class="dropdown-item" href="#">Examen D.A.E.F.L.E.</a></li>
+                                    <!-- Elemento con submenu -->
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">
+                                            Talleres de preparación
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Preparación para certificaciones
+                                                    oficiales</a></li>
+                                            <li><a class="dropdown-item" href="#">Calendario inscripción a exámenes</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Consulta de resultados DELF - DALF</a></li>
+                                </ul>
+                            </li>
+
+                            <!--MENU CULTURA-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" aria-expanded="false">
+                                    Cultura
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">La AFB cumple 80 años</a></li>
+                                    <li><a class="dropdown-item" href="#">F&#234;te de la musique</a></li>
+                                    <li><a class="dropdown-item" href="#">Agenda cultural</a></li>
+                                    <li><a class="dropdown-item" href="#">Postula tu propuesta artística</a></li>
+                                    <li><a class="dropdown-item" href="#">Museo digital "Micro-Folie"</a></li>
+                                </ul>
+                            </li>
+
+                            <!--MENU MEDIATECA-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" aria-expanded="false">
+                                    Mediateca
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Sobre nuestra mediateca</a></li>
+                                    <li><a class="dropdown-item" href="#">Catálogo en línea</a></li>
+                                    <li><a class="dropdown-item" href="#">Sedes y horarios</a></li>
+                                    <li><a class="dropdown-item" href="#">Inscríbete a la mediateca</a></li>
+                                </ul>
+                            </li>
+
+                            <!--MENU CONVENIOS-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" aria-expanded="false">
+                                    Convenios
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Red de Excelencia Educativa de Francés</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Cursos de francés en universidades</a></li>
+                                    <li><a class="dropdown-item" href="#">Cursos de francés en empresas</a></li>
+                                    <li><a class="dropdown-item" href="#">Cooperación con instituciones públicas</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Red de Centros Binacionales para la promoción
+                                            del pluriling&#252;ismo</a></li>
+                                    <li><a class="dropdown-item" href="#">Pasaporte Alliance</a></li>
+                                    <li><a class="dropdown-item" href="#">Planes de financiación</a></li>
+                                    <li><a class="dropdown-item" href="#">AF Bogotá x Audencia Business School</a></li>
+                                </ul>
+                            </li>
+
+                            <!--MENU PUNTOS DE ATENCIÓN-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" aria-expanded="false">
+                                    Puntos de atención
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Sede Cedritos</a></li>
+                                    <li><a class="dropdown-item" href="#">Sede Centro</a></li>
+                                    <li><a class="dropdown-item" href="#">Sede Chicó</a></li>
+                                </ul>
+                            </li>
+
+                            <!--MENU PRODUCTOS Y DONACIONES-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" aria-expanded="false">
+                                    Puntos de atención
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Material pedagógico</a></li>
+                                    <li><a class="dropdown-item" href="#">Donaciones</a></li>
+                                    <li><a class="dropdown-item" href="#">Certificaciones y constancias</a></li>
+                                    <li><a class="dropdown-item" href="#">Merchandising</a></li>
+                                </ul>
+                            </li>
+
+                            <!--OPCIÓN CONTACTO-->
+                            <li class="my-auto"><a class="dropdown-item item-contacto" href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+
+            <div class="col-md-8">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="C:\Users\Estra\OneDrive\Escritorio\proyecto web\ejercicio alianza\img\bandera francia.jpg" class="d-block w-100" alt="Imagen 1">
+                            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.3);"></div>
+                            <div class="carousel-caption position-absolute bottom-0 start-0 bg-none bg-opacity-30 p-3 rounded">
+                                <h5 class="text-" style="font-family: 'Bodoni Moda', serif; font-weight: bold; font-size: 50px; color: #f8f8f8; margin-top: 0; margin-bottom: 0; margin-left: 16; ">Planes de financiación</h5>
+                                <p class="text-green" style="font-family: 'Montserrat', sans-serif; font-size: 32px; ">Descubre nuestros convenios</p>
+                                <p class="text-green" style="font-family: 'Montserrat', sans-serif; font-size: 22px; margin-top: 0; margin-bottom: 0; margin-left: 16;
+                             padding: 7px 20px; 
+                             border: 2px solid #f8f8f8; 
+                             border-radius: 5px; 
+                             display: inline-block;">
+    Ver más
+</p>
+ 
+                            </div>
+                            
+                        </div>
+                        <div class="carousel-item">
+                            <img src="C:\Users\Estra\OneDrive\Escritorio\proyecto web\ejercicio alianza\img\cursos adultos alianza francesa.jpg" class="d-block w-100" alt="Imagen 2">
+                            <!-- Capa superpuesta con opacidad -->
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.3);"></div>
+
+
+                            <div class="carousel-caption position-absolute bottom-0 start-0 bg-none bg-opacity-30 p-3 rounded">
+                              <h5 class="text-" style="font-family: 'Bodoni Moda', serif; font-weight: bold; font-size: 50px; color: #f8f8f8; margin-top: 0; margin-bottom: 0; margin-left: 16; ">Francés para adultos</h5>
+                              <p class="text-green" style="font-family: 'Bodoni', sans-serif; font-size: 32px; ">Horarios flexibles</p>
+                              <p class="text-green" style="font-family: 'Bodoni', sans-serif; font-size: 22px; margin-top: 0; margin-bottom: 0; margin-left: 16;
+                             padding: 7px 20px; 
+                             border: 2px solid #b6d6de; 
+                             border-radius: 5px; 
+                             display: inline-block;">
+    Ver más
+</p>
+                            </div>
+                          
+                        </div>
+                        <div class="carousel-item">
+                            <img src="C:\Users\Estra\OneDrive\Escritorio\proyecto web\ejercicio alianza\img\cursos niños alianza francesa.jpg" class="d-block w-100" alt="Imagen 3">
+                            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.3);"></div>
+                            <div class="carousel-caption position-absolute bottom-0 start-0 bg-none bg-opacity-30 p-3 rounded">
+                                <h5 class="text-" style="font-family: 'Bodoni Moda', serif; font-weight: bold; font-size: 50px; color: #f8f8f8; margin-top: 0px; margin-left: 0; margin-bottom: 6;">Francés para niños</h5>
+                                <p class="text-green" style="font-family: 'Bodoni', sans-serif; font-size: 32px; margin-top: 0; margin-bottom: 0; margin-left: 16; ">De 7 a 10 años</p>
+                                <p class="text-green" style="font-family: 'Bodoni', sans-serif; font-size: 22px; margin-top: 0; margin-bottom: 0; margin-left: 16;
+                             padding: 7px 20px; 
+                             border: 2px solid #b6d6de; 
+                             border-radius: 5px; 
+                             display: inline-block;">
+    Ver más
+</p>
+                              </div>
+                        
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+    
+        
+            <div class="col-md-4 d-flex flex-column position-relative">
+                <div class="mb-2 position-relative">
+                    <img src="C:\Users\Estra\OneDrive\Escritorio\proyecto web\ejercicio alianza\img\torre eiffel.jpg" class="img-fluid" alt="Imagen superior" style="opacity: 0.8;">
+                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.3);"></div>
+                    <div class="position-absolute bottom-0 start-0 bg-none bg-opacity-30 p-3 rounded">
+                        <h5 class="text-" style="font-family: 'Bodoni', serif; font-size: 25px; color: #f8f8f8; ">¿HAS TOMADO CLASES DE FRANCÉS?</h5>
+                        <p class="text-green" style="font-family: 'Bodoni', sans-serif; font-size: 22px; 
+                             padding: 10px 20px; 
+                             border: 2px solid #f8f8f8; 
+                             border-radius: 5px; 
+                             display: inline-block;
+                             color: white;">
+    Test de orientación
+</p>
+                      </div>
+                </div>
+
+                <div>
+                    <img src="C:\Users\Estra\OneDrive\Escritorio\proyecto web\ejercicio alianza\img\cultura alianza francesa.jpg" class="img-fluid" alt="Imagen inferior" style="opacity: 0.8;">
+                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.3);"></div>
+                    <div class="position-absolute bottom-0 start-0 bg-none bg-opacity-20 p-3 rounded">
+                        <h5 class="text" style="font-family: 'Bodoni Moda', serif; font-size: 25px; color: #f8f8f8; ">TE ACERCAMOS A LA CULTURA FRANCESA</h5>
+                        <p class="text" style="font-family: 'Bodoni', sans-serif; font-size: 22px; 
+                             padding: 10px 20px; 
+                             border: 2px solid #f8f8f8; 
+                             border-radius: 5px; 
+                             display: inline-block;
+                             color: white;">
+    Conoce la agenda cultural
+</p>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
-</html>
+[</html>]
